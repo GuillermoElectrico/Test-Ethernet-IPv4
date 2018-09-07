@@ -66,8 +66,8 @@ Una vez montado ya solo queda configurar y subir el programa al Arduino. Para el
 
 Está disponible en: https://1drv.ms/u/s!At1AwrxoRqguw-Y5gXUSvRbdpju0hA
 
-Para poder extraer alguna información de las librerías oficiales de Arduino ha sido necesario modificarlas para tal fin. Pero, por el hecho de modificarlas, ya no es compatible con otros programas que usen esas librerías y genera errores. Con lo cual solo quedan dos opciones, o sustituir temporalmente las librerías originales por las librerías modificadas para subir el programa (luego volviendo a restablecer las originales) o usar el “arduino-1.8.6 Test Ethernet IPv4”, que ya incluye las librerías y está comprobado su correcto funcionamiento.
-En esta guía se centrará en el uso de “arduino-1.8.6 Test Ethernet IPv4”, por ser la manera más fácil de actuar.
+Para poder extraer alguna información de las librerías oficiales de Arduino ha sido necesario modificarlas para tal fin. Pero, por el hecho de modificarlas, ya no es compatible con otros programas que usen esas librerías y genera errores. Con lo cual solo quedan dos opciones, o sustituir temporalmente las librerías originales por las librerías modificadas para subir el programa (luego volviendo a restablecer las originales) o usar el “arduino-1.8.6_Test_Ethernet_IPv4”, que ya incluye las librerías y está comprobado su correcto funcionamiento.
+En esta guía se centrará en el uso de “arduino-1.8.6_Test_Ethernet_IPv4”, por ser la manera más fácil de actuar.
 Para subir el programa solo hay que conectar el Arduino Uno (o Arduino Ethernet con el cable FTDI) al equipo e iniciar el ejecutable “arduino.exe”.
 Tras eso nos parecerá la ventana siguiente:
 
