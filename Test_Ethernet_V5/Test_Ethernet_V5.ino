@@ -1,19 +1,18 @@
 /*
   NECESARIO MODIFICAR ETHERNET.H Y ETHERNET.CPP PARA OBTENER IP DEL SERVIDOR DHCP. SOLO HAY QUE AÑADIR LO NECESARIO PARA PODER OBTENER ESA INFORMACIÓN.
   O adjuntar Librería Ethernet_Mod ya preparadas para tal fin.
-  Para la Pantalla necesaria librería Adafruit_TFTLCD (modificada https://electronicavm.wordpress.com/2015/03/05/tft-lcd-touch-2-4-shield-para-arduino-uno/)
-  y Adafruit_GFX.
+  Para la Pantalla necesaria librería Adafruit_TFTLCD y Adafruit_GFX.
   Para el test ICMP es usada la librería ICMP_Ping https://github.com/BlakeFoster/Arduino-Ping
   Probado en Arduino Uno con Shiel Ethernet W5100 compatible, recomendada placa Arduino Ethernet, por tamaño y ergonomía.
   Pantalla usada 2.8 Inch TFT LCD HX8347 Shield 
   https://es.aliexpress.com/item/WAVGAT-2-8-Inch-3-3V-300mA-TFT-LCD-Shield-Touch-Display-Module-For-Arduino-UNO/32907271642.html
   o
   https://www.adafruit.com/product/376
-  Probado y funcional el 06/09/2018 con Arduino IDE 1.8.6 y las librerías modificadas basadas en Ethernet Library 1.1.2.
+  Probado y funcional el 06/09/2018 con Arduino IDE 1.8.6 y las librerías modificadas basadas en Ethernet Library 1.1.2. https://1drv.ms/u/s!At1AwrxoRqguw-Y5gXUSvRbdpju0hA
   Posibilidad de añadir más funciones, pero prima la estabilidad y la rapidez de los resultados.
 
   De momento solo funciona con versiones de librería ethernet 1.1.2 o inferiores, librerías 2.0.0 o superior aún en pruebas
-  (falta como hacer ICMP con la nueva librerías, en el directorio principal está la librería ethernet 2.0.0 modificada y funcional por si alguien se atreve).
+  (falta como hacer ICMP con la nueva librerías. Disponible la librería ethernet 2.0.0 modificada y funcional por si alguien se atreve o en un futuro se puede implementar ICMP echoReply).
 
 */
 
@@ -46,7 +45,7 @@ Adafruit_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET); // Instancia del
 #define WHITE   0xFFFF
 ////////////////////////////////////////////////////////////////////
 
-// SI HAY QUE CAMBIAR ALGO, SOLO HAY QUE TOCAR AQUÍ (se puede cambiar más adelante por serial).
+// SI HAY QUE CAMBIAR ALGO, SOLO HAY QUE TOCAR AQUÍ.
 
 #define TIEMPO_RESET 30                 // Tiempo de espera antes volver a realizar la prueba tras no encontrar servidor DHCP.
 #define hostname "www.google.com"        // Host to resolve DNS sever default.
