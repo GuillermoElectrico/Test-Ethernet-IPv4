@@ -118,7 +118,8 @@ Si la prueba es satisfactoria aparecería la siguiente pantalla:
 * Los elementos en Verde son los resultados satisfactorios del test.*
 * Los elementos en Rojo son los resultados fallidos del test.*
 * Los elementos en Azul son información adicional al test satisfactorio verde. 
-* Principalmente los test Verde o Rojo son resultados de un test de Ping ICMP al elemento Amarillo.
+
+*Principalmente los test Verde o Rojo son resultados de un test de Ping ICMP al elemento Amarillo.
 
 Para reiniciar el test, solo habría que pulsar el boton reset de la placa Arduino.
 
