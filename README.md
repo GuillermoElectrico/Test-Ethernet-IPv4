@@ -19,20 +19,20 @@ Los dispositivos necesarios son:
 
 #### Arduino Uno + Shield Ethernet W5100 *
  
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen3.png "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen3.jpg "")
 
 * Arduino Uno + Shield Ethernet W5100 puede ser sustituido por un Arduino Ethernet:
  
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen4.png "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen4.jpg "")
  
 Es la unión de dos en uno, ocupando menos espacio, aunque con el inconveniente de ser más caro que los otros dos juntos (dependiendo donde se adquieran) y la necesidad de tener que adquirir un cable FTDI 5V a mayores para poder subir el programa. 
 
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen5.png "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen5.jpg "")
 
 #### Shield Alimentación LiPo + Batería LiPo *
  
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen6.png "")
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen7.png "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen6.jpg "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen7.jpg "")
 
 Si queremos que el equipo sea portátil, necesitaremos alimentarlo de alguna manera. Una opción son las Shield de alimentación, la ventaja es la fácil implantación en el conjunto, así como la posibilidad de ser recargables. La principal desventaja es el precio de la propia Shield.
 
@@ -41,7 +41,7 @@ Si queremos que el equipo sea portátil, necesitaremos alimentarlo de alguna man
 
 #### Pines Hembra Arduino (Opcional)
 
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen8.png "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen8.jpg "")
  
 Para evitar que quede mal ajustada la pantalla con el conector Ethernet se pueden usar unos pines Arduino como extensores a fin de evitar el contacto entre las placas y evitar posibles cortocircuitos.
 
@@ -53,17 +53,19 @@ Además de estos materiales será necesario disponer de un ordenador con un puer
 En esto no hay mucha ciencia, es tan sencillo como ir uniendo Shield al Arduino Uno (o Arduino Ethernet) finalizando el sándwich con la Pantalla 2.8”. Siempre evitando que las Shield se lleguen a tocar o que queden forzadas (en ese caso usar los Pines Hembra Arduino, viendo si es necesario en el caso, acortar los pines para que quede más compacto)
 Al final tendrá que quedar más o menos como esto:
 
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen9.png "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen9.jpg "")
  
 O si se usa un Arduino Ethernet:
  
-![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen10.png "")
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen10.jpg "")
 
-Ya solo queda cargar el programa con el “arduino-1.8.6 Test Ethernet IPv4” que incluye las librerías modificadas necesarias para el correcto funcionamiento.
 
 ### Subir programa 
 
 Una vez montado ya solo queda configurar y subir el programa al Arduino. Para ello se recomienda usar la versión del IDE Arduino Configurado, ya que dispone de las librerías modificadas para el correcto funcionamiento del programa. 
+
+Está disponible en:
+
 Para poder extraer alguna información de las librerías oficiales de Arduino ha sido necesario modificarlas para tal fin. Pero, por el hecho de modificarlas, ya no es compatible con otros programas que usen esas librerías y genera errores. Con lo cual solo quedan dos opciones, o sustituir temporalmente las librerías originales por las librerías modificadas para subir el programa (luego volviendo a restablecer las originales) o usar el “arduino-1.8.6 Test Ethernet IPv4”, que ya incluye las librerías y está comprobado su correcto funcionamiento.
 En esta guía se centrará en el uso de “arduino-1.8.6 Test Ethernet IPv4”, por ser la manera más fácil de actuar.
 Para subir el programa solo hay que conectar el Arduino Uno (o Arduino Ethernet con el cable FTDI) al equipo e iniciar el ejecutable “arduino.exe”.
