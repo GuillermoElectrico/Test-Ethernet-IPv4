@@ -96,7 +96,7 @@ void setup()
   // Inicializar LCD y escribir mensaje de bienvenida.
   tft.reset();
   tft.begin(0x7575); // Iniciamos el LCD especificando el controlador de nuestro LC. En este caso el 0x7575 que es igual que HX8347.
-  // Otros controladores: 0x9325, 0x9328, 0x7575, 0x9341, 0x8357.
+  // Otros controladores: 0x9325, 0x9328, 0x7575, 0x9341, 0x8357, 0x9341.
   delay(100);
   tft.setRotation(0);
   tft.fillScreen(BLACK);
@@ -303,7 +303,6 @@ void setup()
   tft.print(F("Resolve hostname ->"));
   tft.setTextColor(MAGENTA);
   tft.setCursor( 0, 180);
-  // Recuperar dirección de eeprom (si es necesario)
   tft.print(hostname);
   tft.setTextColor(WHITE);
   // Inicializar DNSClient
