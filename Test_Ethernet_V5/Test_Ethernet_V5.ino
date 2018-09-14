@@ -257,7 +257,7 @@ void setup()
   sprintf(buff, "%d.%d.%d.%d\0", Ethernet.gatewayIP()[0], Ethernet.gatewayIP()[1], Ethernet.gatewayIP()[2], Ethernet.gatewayIP()[3]);
   tft.setCursor( 0, 90);
   tft.setTextColor(WHITE);
-  tft.print(F("Gateway IPv4 address:"));
+  tft.print(F("Gateway IPv4 address"));
   tft.setTextColor(YELLOW);
   tft.setCursor( 0, 108);
   tft.print(buff);
