@@ -4,12 +4,11 @@
   Para la Pantalla necesaria librería Adafruit_TFTLCD y Adafruit_GFX.
   Para el test ICMP es usada la librería ICMP_Ping https://github.com/BlakeFoster/Arduino-Ping
   Probado en Arduino Uno con Shiel Ethernet W5100 compatible, recomendada placa Arduino Ethernet, por tamaño y ergonomía.
-  Pantalla usada 2.8 Inch TFT LCD HX8347 Shield 
+  Pantalla usada 2.8 Inch TFT LCD HX8347 Shield
   https://es.aliexpress.com/item/WAVGAT-2-8-Inch-3-3V-300mA-TFT-LCD-Shield-Touch-Display-Module-For-Arduino-UNO/32907271642.html
   o
   https://www.adafruit.com/product/376
-  Módulo batería Lipo -> https://es.aliexpress.com/item/Elecrow-LiPower-Shield-for-Arduino-Portable-Device-2-In-1-Development-Board-3-7V-LiPo-Battery/32278066863.html
-  Probado y funcional el 06/09/2018 con Arduino IDE 1.8.6 y las librerías modificadas basadas en Ethernet Library 1.1.2. 
+  Probado y funcional el 06/09/2018 con Arduino IDE 1.8.6 y las librerías modificadas basadas en Ethernet Library 1.1.2.
   IDE configurado => https://1drv.ms/u/s!At1AwrxoRqguw-Y5gXUSvRbdpju0hA
   Posibilidad de añadir más funciones, pero prima la estabilidad y la rapidez de los resultados.
 
@@ -118,7 +117,15 @@ void setup()
     // Si hay error o no hay IP mostrar mensaje de error.
     tft.setTextColor(RED);
     tft.setCursor( 0, 18);
-    tft.print(F("DHCP NOT FOUND"));
+    /* ONLY IN 2.0 LIBRARIE
+      if (Ethernet.hardwareStatus() == EthernetNoHardware) {
+      tft.print(F("NO HARDWARE"));    //Ethernet shield was not found;
+      } else if (Ethernet.linkStatus() == LinkOFF) {
+      tft.print(F("LINK OFF"));       //Ethernet cable is not connected.
+      } else {
+    */
+    tft.print(F("DHCP NOT FOUND")); //Ethernet cable is not connected.
+    //}
     tft.setCursor( 160, 300);
     tft.print(F(" FAIL"));
     tft.setTextColor(CYAN);
