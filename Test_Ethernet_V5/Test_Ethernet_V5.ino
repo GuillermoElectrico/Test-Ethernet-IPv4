@@ -3,11 +3,14 @@
   O adjuntar Librería Ethernet_Mod ya preparadas para tal fin.
   Para la Pantalla necesaria librería Adafruit_TFTLCD y Adafruit_GFX.
   Para el test ICMP es usada la librería ICMP_Ping https://github.com/BlakeFoster/Arduino-Ping
-  Probado en Arduino Uno con Shiel Ethernet W5100 compatible, recomendada placa Arduino Ethernet, por tamaño y ergonomía.
+  Probado en Arduino Uno con Shiel Ethernet W5100 compatible (o solo shield Ethernet y placa Arduino Minimal, disponible PCB en GIT).
+  https://es.aliexpress.com/store/product/Free-Shipping-UNO-Shield-Ethernet-Shield-W5100-R3-UNO-Mega-2560-1280-328-UNR-R3-only/1948124_32502588687.html
   Pantalla usada 2.8 Inch TFT LCD HX8347 Shield
   https://es.aliexpress.com/item/WAVGAT-2-8-Inch-3-3V-300mA-TFT-LCD-Shield-Touch-Display-Module-For-Arduino-UNO/32907271642.html
   o
   https://www.adafruit.com/product/376
+  Opcional posibilidad de montar módulo de energía con batería lipo (para hacerlo portátil)
+  https://es.aliexpress.com/item/Mini-Water-Pump/32278066863.html (con por ejemplo https://es.aliexpress.com/store/product/3-7V-1000mAh-803040-Lithium-Polymer-Li-Po-ion-Rechargeable-Battery-For-MP4-MP5-GPS-PSP/3567048_32901024978.html)
   Probado y funcional el 06/09/2018 con Arduino IDE 1.8.6 y las librerías modificadas basadas en Ethernet Library 1.1.2.
   IDE configurado => https://1drv.ms/u/s!At1AwrxoRqguw-Y5gXUSvRbdpju0hA
   Posibilidad de añadir más funciones, pero prima la estabilidad y la rapidez de los resultados.
