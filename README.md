@@ -21,7 +21,7 @@ Los dispositivos necesarios son:
  
 ![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen3.jpg "")
 
-*Arduino Uno + Shield Ethernet W5100 puede ser sustituido por un Arduino Ethernet:
+*Arduino Uno + Shield Ethernet W5100 puede ser sustituido por un Arduino Ethernet*:
  
 ![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen4.jpg "")
  
@@ -128,4 +128,50 @@ Si la prueba es satisfactoria aparecería la siguiente pantalla:
 Para reiniciar el test, solo habría que pulsar el boton reset de la placa Arduino.
 
 FIN 😉.
+
+## Actualización 02/02/2019
+
+### Montaje con PCB Minimal especial (Opcional, *alternativa a Arduino Ethernet ya descatalogado)
+
+Para el montaje de esta configuración es necesario un Arduino Uno (o un Atmega328 DIP) + Shield Ethernet W5100, la Shield Alimentación LiPo + Batería LiPo y una placa PCB especial (disponible el gerber y el fzz en la carpeta PCB_Minimalista). 
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen21.jpg "")
+
+
+Puedes mandar fabricar la PCB en JLCPCB o PCBWay (o similar) por entre 2-5$ (10 unidades).
+
+También necesitarías un cristal de cuarzo de 16MHz, dos condensadores de 22pF cerámicos y una resistencia de 10K.
+
+El montaje es sencillo y se resume en las siguientes imágenes (en este montaje es recomendable programar el chip Atmega328 antes de ponerlo en la PCB, seá mediante programador o durectamente usando el Arduino UNO y luego sacando el chip).
+
+Simplemente se montan los componentes en la PCB y se sueldan (recomendable montar un zócalo para el Atmega328, por si hay que actualizar el código en un futuro). 
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen22.jpg "")
+
+A su vez se suelda en la Shield Alimentación LiPo por debajo, dejando un espacio entre las placas para evitar contactos no deseados.
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen23.jpg "")
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen24.jpg "")
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen25.jpg "")
+
+Ahora lo que hay que hacer es en la Shield Ethernet W5100 es recortar los pines de conexión (ya que se conectará por los hembras superiores) y quitar el conector del ICSP. 
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen26.jpg "")
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen27.jpg "")
+
+Hay que soldar tres hilos entre los pines 11, 12 y 13 a los pines del ISCP de la Shield Ethernet W5100 para que funcione el el bus SPI (en las placas muy antiguas no haría falta, pero en las modernas compatibles con mega es obligatorio).
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen28.jpg "")
+
+Una vez soldado, se puede proteger los hilos con cinta o con unas gotas de pegamento para que no se suelten ni se enganchen.
+
+Ya solo falta conectar la batería a la Shield de Alimentación, montar la pantalla y listo. Si habias programado antes de montar el Atmega328 (sea extraido de la placa Arduino UNO o simplemente el chip DIP) una vez que lo enciendas ya estaría funcionando y mostrando información en la pantalla (anteriormente explicado como funciona).
+
+Es una alternativa funcional (y económica) al Arduino Ethernet que ya no se fabrica. Hace mucho más compacto y manejable el montaje final.
+
+![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen29.jpg "")
+
 
