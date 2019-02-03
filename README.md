@@ -142,7 +142,7 @@ Puedes mandar fabricar la PCB en JLCPCB o PCBWay (o similar) por entre 2-5$ (10 
 
 También necesitarías un cristal de cuarzo de 16MHz, dos condensadores de 22pF cerámicos y una resistencia de 10K.
 
-El montaje es sencillo y se resume en las siguientes imágenes (en este montaje es recomendable programar el chip Atmega328 antes de ponerlo en la PCB, seá mediante programador o durectamente usando el Arduino UNO y luego sacando el chip).
+El montaje es sencillo y se resume en las siguientes imágenes (en este montaje es recomendable programar el chip Atmega328 antes de ponerlo en la PCB, seá mediante programador o directamente usando el Arduino UNO y luego sacando el chip).
 
 Simplemente se montan los componentes en la PCB y se sueldan (recomendable montar un zócalo para el Atmega328, por si hay que actualizar el código en un futuro). 
 
