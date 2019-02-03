@@ -162,7 +162,7 @@ Ahora lo que hay que hacer es en la Shield Ethernet W5100 es recortar los pines 
 
 ![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen27.jpg "")
 
-Hay que soldar tres hilos entre los pines 11, 12 y 13 a los pines del ISCP de la Shield Ethernet W5100 para que funcione el el bus SPI (en las placas muy antiguas no haría falta, pero en las modernas compatibles con mega es obligatorio).
+Hay que soldar tres hilos entre los pines 11, 12 y 13 a los pines del ISCP de la Shield Ethernet W5100 para que funcione el bus SPI (en las placas muy antiguas no haría falta, pero en las modernas compatibles con mega es obligatorio).
 
 ![alt text](https://github.com/GuillermoElectrico/Test-Ethernet-IPv4/blob/master/Documentacion/Imagenes/imagen28.jpg "")
 
